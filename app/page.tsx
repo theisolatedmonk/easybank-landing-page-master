@@ -25,7 +25,7 @@ import LatestArticles from "@/app/components/LatestArticles";
 
 export default function Home() {
   return (
-    <main className="w-full h-screen bg-white gap-4 justify-between text-black overflow-auto">
+    <main className="w-full h-screen bg-white gap-4 justify-between text-black overflow-auto font-Public Sans">
       <div className="flex justify-between px-2 py-4  bg-white z-20 relative">
         <button>
           {" "}
@@ -138,9 +138,9 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="flex bg-white flex-col ">
+      <div className="flex bg-white flex-col p-8">
         <p className="">Latest Artical</p>
-        <div className="sm:flex-row flex-col gap-2">
+        <div className="flex sm:flex-row flex-col gap-2">
           <LatestArticles
             Images={currency}
             smallText={"By Claire Robinson"}
@@ -175,10 +175,10 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="bg-gray-700 flex text-white justify-between p-2">
-        <div className="flex flex-col justify-between ">
+      <div className="bg-gray-700 flex text-white justify-between p-8 flex-col sm:flex-row sm:items-start sm:text-left  text-center items-center gap-4">
+        <div className="flex flex-col justify-between items-center gap-4 ">
           <Image src={logo} alt={""} />
-          <div className="flex">
+          <div className="flex gap-4">
             <Image src={facebook} alt={""} />
             <Image src={youtube} alt={""} />
             <Image src={twitter} alt={""} />
@@ -186,17 +186,17 @@ export default function Home() {
             <Image src={instagram} alt={""} />
           </div>
         </div>
-        <div className="flex flex-col ">
+        <div className="flex flex-col gap-2 ">
           <p>About Us</p>
           <p>Contac</p>
           <p>Blog</p>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-2">
           <p>Careers </p>
           <p>Support </p>
           <p>Privacy Policy </p>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col sm:items-end gap-2">
           <button
             type="button"
             className="bg-gradient-to-r from-[hsl(136,65%,51%)] to-[hsl(192,70%,51%)] hover:from-pink-500 hover:to-yellow-500 py-2 px-4 rounded-3xl"
