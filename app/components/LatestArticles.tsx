@@ -10,12 +10,12 @@ type ArticalType = {
 
 export default function LatestArticles(props: ArticalType) {
   return (
-    <div className="flex flex-col">
+    <div className="p-2 flex flex-col gap-4 text-left">
       <Image src={props.Images} alt={""} />
-      <div className="flex flex-col sm:p-2">
-        <p className="">{props.smallText}</p>
-        <p className="">{props.boldText}</p>
-        <p className="">{props.normalText}</p>
+      <div className="flex flex-col sm:p-2 gap-2">
+        <p className="text-xs">{props.smallText}</p>
+        <p className="text-lg ">{props.boldText}</p>
+        <p className="text-sm">{props.normalText}</p>
       </div>
     </div>
   );

@@ -26,7 +26,7 @@ import LatestArticles from "@/app/components/LatestArticles";
 export default function Home() {
   return (
     <main className="w-full h-screen bg-white gap-4 justify-between text-black overflow-auto font-Public Sans">
-      <div className="flex justify-between px-2 py-4  bg-white z-20 relative">
+      <div className="flex justify-between sm:px-32 sm:py-4  bg-white z-20 relative p-4">
         <button>
           {" "}
           <Image src={logo} alt={""} />
@@ -40,7 +40,7 @@ export default function Home() {
         </div>
         <button
           type="button"
-          className="sm:flex hidden bg-gradient-to-r from-[hsl(136,65%,51%)] to-[hsl(192,70%,51%)] hover:from-pink-500 hover:to-yellow-500 py-2 px-4 rounded-3xl"
+          className="sm:flex hidden bg-gradient-to-r from-[hsl(136,65%,51%)] to-[hsl(192,70%,51%)] hover:from-pink-500 hover:to-yellow-500 py-3 px-8 rounded-3xl text-white"
         >
           Request Invite
         </button>
@@ -49,11 +49,28 @@ export default function Home() {
           <p className="w-6  bg-black h-[.5px] "></p>
           <p className="w-6  bg-black h-[1px] "></p>
         </button>
+        <button>
+          {" "}
+          <Image src={close} alt={""} />
+        </button>
       </div>
+
+      <div className="bg-black bg-opacity-20 fixed z-40 w-full h-screen top-13 overflow-hidden right-2 p-4">
+        <div className="flex flex-col sm:hidden items-center bg-white gap-2 justify-center p-4 rounded-sm">
+          <p className="">home</p>
+          <p className="">About</p>
+          <p className="">Contact</p>
+          <p className="">Blog</p>
+          <p className="">Careers</p>
+        </div>
+      </div>
+
       <div className="flex    sm:flex-row flex-col-reverse w-full  justify-between  gap-32 sm:gap-4">
         {/* text */}
-        <div className="flex flex-col top-96 sm:top-20 items-center justify-center p-4 gap-4 sm:p-14">
-          <p className="">Next generation digital banking</p>
+        <div className="flex flex-col top-96 sm:top-0 items-center justify-center p-4 gap-8 sm:p-32 text-center sm:text-left sm:items-start sm:mt-[-80px] ">
+          <p className=" sm:text-4xl  text-3xl ">
+            Next generation digital banking
+          </p>
           <p className="">
             Take your financial life online. Your Easybank account will be a
             one-stop-shop for spending, saving, budgeting, investing, and much
@@ -61,7 +78,7 @@ export default function Home() {
           </p>
           <button
             type="button"
-            className="bg-gradient-to-r from-[hsl(136,65%,51%)] to-[hsl(192,70%,51%)] hover:from-pink-500 hover:to-yellow-500 py-2 px-4 rounded-3xl"
+            className=" bg-gradient-to-r from-[hsl(136,65%,51%)] to-[hsl(192,70%,51%)] hover:from-pink-500 hover:to-yellow-500 py-3 px-8 rounded-3xl text-white"
           >
             Request Invite
           </button>
@@ -99,15 +116,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-[hsl(233,8%,62%)] bg-opacity-30">
-        <div className="flex flex-col sm:p-14 w-[68%]">
-          <p className="">Who choose Easybank?</p>
+      <div className="bg-[hsl(233,8%,62%)] bg-opacity-30 sm:px-24 sm:py10 flex flex-col">
+        <div className="flex flex-col sm:p-14 sm:w-[60%] gap-8 sm:text-left   text-center items-center  p-4 ">
+          <p className="text-3xl ">Why choose Easybank?</p>
           <p className="">
             We leverage Open Banking to turn your bank account into your
             financial hub Control your finances like never before.
           </p>
         </div>
-        <div className="flex sm:flex-row  flex-col  p-8">
+        <div className="flex sm:flex-row  flex-col  p-4">
           <ContainerType
             textBold={"Online Banking "}
             textNormal={
@@ -138,8 +155,8 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="flex bg-white flex-col p-8">
-        <p className="">Latest Artical</p>
+      <div className="flex bg-white flex-col sm:px-24 sm:py-10 p-4 sm:gap-8 text-center sm:text-left">
+        <p className="text-3xl">Latest Artical</p>
         <div className="flex sm:flex-row flex-col gap-2">
           <LatestArticles
             Images={currency}
@@ -175,8 +192,8 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="bg-gray-700 flex text-white justify-between p-8 flex-col sm:flex-row sm:items-start sm:text-left  text-center items-center gap-4">
-        <div className="flex flex-col justify-between items-center gap-4 ">
+      <div className="bg-gray-700 flex text-white justify-between p-4 flex-col sm:flex-row sm:items-start sm:text-left  text-center items-center gap-4 sm:px-24 ">
+        <div className="flex flex-col sm:justify-between items-center sm:gap-10 gap-6 ">
           <Image src={logo} alt={""} />
           <div className="flex gap-4">
             <Image src={facebook} alt={""} />
@@ -199,7 +216,7 @@ export default function Home() {
         <div className="flex flex-col sm:items-end gap-2">
           <button
             type="button"
-            className="bg-gradient-to-r from-[hsl(136,65%,51%)] to-[hsl(192,70%,51%)] hover:from-pink-500 hover:to-yellow-500 py-2 px-4 rounded-3xl"
+            className="bg-gradient-to-r from-[hsl(136,65%,51%)] to-[hsl(192,70%,51%)] hover:from-pink-500 hover:to-yellow-500 py-3 px-8 rounded-3xl text-white"
           >
             Request Invite
           </button>
